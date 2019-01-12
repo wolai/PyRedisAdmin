@@ -23,5 +23,5 @@ show_key_self_count = False
 
 lang = 'zh_CN'
 
-admin_user = 'admin'
-admin_pwd = 'admin'
+admin_user = os.environ.get('ADMIN_USER', 'admin')
+admin_pwd = os.environ.get('ADMIN_PWD', 'admin')
