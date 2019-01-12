@@ -4,8 +4,8 @@ base = {
     'servers':[
               {'index':0,
                'name': '12km_cluster_redis', 
-              'host': os.environ.get('redis-host', '127.0.0.1'),
-              'port': os.environ.get('redis-port', 6379),
+              'host': os.environ.get('REDIS_HOST', '127.0.0.1'),
+              'port': os.environ.get('REDIS_PORT', 6379),
               'databases':16
               },
           ],
